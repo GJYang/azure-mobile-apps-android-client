@@ -8,27 +8,28 @@
     <item
         android:id="@+id/menu_run_tests"
         android:orderInCategory="101"
-        android:showAsAction="always"
-        android:title="@string/menu_run_tests"></item>
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/menu_run_tests" />
     <item
         android:id="@+id/menu_check_all"
         android:orderInCategory="102"
-        android:showAsAction="always"
-        android:title="@string/menu_check_all"></item>
+        android:showAsAction="never"
+        android:title="@string/menu_check_all" />
     <item
         android:id="@+id/menu_uncheck_all"
         android:orderInCategory="103"
         android:showAsAction="never"
-        android:title="@string/menu_uncheck_all"></item>
+        android:title="@string/menu_uncheck_all" />
     <item
         android:id="@+id/menu_reset"
         android:orderInCategory="105"
-        android:showAsAction="always"
-        android:title="@string/menu_reset"></item>
+        android:showAsAction="never"
+        android:title="@string/menu_reset" />
     <item
         android:id="@+id/menu_view_log"
         android:orderInCategory="106"
         android:showAsAction="never"
-        android:title="@string/menu_view_log"></item>
+        android:title="@string/menu_view_log" />
 
 </menu>
