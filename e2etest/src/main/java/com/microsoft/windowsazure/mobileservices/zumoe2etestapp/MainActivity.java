@@ -121,11 +121,11 @@ public class MainActivity extends Activity {
             mAutomationPreferences.put(Constants.PREFERENCE_BASE64_TOKEN, extras.getString(Constants.PREFERENCE_BASE64_TOKEN, ""));
         }
 
-        mTestCaseList = (ListView) findViewById(R.id.testCaseList);
+        mTestCaseList = findViewById(R.id.testCaseList);
         TestCaseAdapter testCaseAdapter = new TestCaseAdapter(this, R.layout.row_list_test_case);
         mTestCaseList.setAdapter(testCaseAdapter);
 
-        mTestGroupSpinner = (Spinner) findViewById(R.id.testGroupSpinner);
+        mTestGroupSpinner = findViewById(R.id.testGroupSpinner);
 
         ArrayAdapter<TestGroup> testGroupAdapter = new ArrayAdapter<TestGroup>(this, android.R.layout.simple_spinner_item);
         mTestGroupSpinner.setAdapter(testGroupAdapter);

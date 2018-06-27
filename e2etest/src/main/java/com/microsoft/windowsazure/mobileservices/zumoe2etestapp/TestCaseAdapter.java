@@ -67,7 +67,7 @@ public class TestCaseAdapter extends ArrayAdapter<TestCase> {
             row = inflater.inflate(mLayoutResourceId, parent, false);
         }
 
-        final CheckBox checkBox = (CheckBox) row.findViewById(R.id.checkTestCase);
+        final CheckBox checkBox = row.findViewById(R.id.checkTestCase);
 
         String text = String.format("%s - %s", testCase.getName(), testCase.getStatus().toString());
 
